@@ -7,7 +7,7 @@
             "previewLimit": 50,
             "server": "localhost",
             "port": 3306,
-            "driver": "MySQL",
+            "driver": "MSQL",
             "name": "Luciana",
             "database": "residenciatechad",
             "username": "root",
