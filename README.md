@@ -9,4 +9,5 @@ Serão desenvolvidos três projetos durante a Residencia Tech de Analise Dados, 
 Análise dos dados públicos do Depto, Compras da Prefeitura do Município de Recife
 
 arquivo: Análise de Dados do Setor Público.docx (Passo a Passo geral da estrutura, Buggs e conclusões de erros)
+
 arquivo: Script Projeto Setor Publico.sql (Script final, o que deu certo,kkk)
