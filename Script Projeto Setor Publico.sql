@@ -34,16 +34,19 @@ CHANGE COLUMN `datafimvigencia` `datafimvigencia` DATE NULL DEFAULT NULL ;
 #ALTERAÇÃO DO NOME DAS TABELAS PARA recife_dados_despesas_2021 e recife_dados_receitas_2021
 --Foi alterado para padronizar e facilitar a manipulação das informações.
 ALTER TABLE `residenciatechad`.`recife-dados-despesas-2021` 
-RENAME TO  `residenciatechad`.`recife_dados_despesas_2021` ;
+RENAME TO  `residenciatechad`.`recife_dados_despesas_2021`;
 
 ALTER TABLE `residenciatechad`.`recife-dados-receitas-2021` 
 RENAME TO  `residenciatechad`.`recife_dados_receitas_2021`;
 
 --Verificando o tipo de colunas no arquivo recife-dados-despesas-2021:
-DESCRIBE residenciatechad.recife_dados_despesas_2021 ;
+DESCRIBE residenciatechad.recife_dados_despesas_2021;
 
 
 
+SELECT TOP(10) * FROM residenciatechad.recife_dados_despesas_2021;
+
+SELECT COUNT (*) FROM residenciatechad.recife_dados_despesas_2021;
 
 --Verificando o tipo de colunas no arquivo recife-dados-receitas-2021:
 DESCRIBE residenciatechad.recife_dados_receitas_2021;
