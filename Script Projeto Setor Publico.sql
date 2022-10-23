@@ -75,6 +75,9 @@ MAX(length(credor_codigo)),                 --7
 MAX(length(modalidade_licitacao_codigo))    --2
 FROM residenciatechad.recife_dados_despesas_2021;
 
+select max(length(categoria_economica_codigo))
+from residenciatechad.recife_dados_despesas_2021; --1
+
 --Alterando o tipo de algumas colunas de BIGINT(20) para INT
 ALTER TABLE residenciatechad.recife_dados_despesas_2021
 CHANGE COLUMN `ano_movimentacao` `ano_movimentacao` YEAR(4) NULL DEFAULT NULL,
@@ -83,6 +86,11 @@ CHANGE COLUMN `orgao_codigo` `orgao_codigo` SMALLINT (3) NULL DEFAULT NULL,
 CHANGE COLUMN `fonte_recurso_codigo` `fonte_recurso_codigo` SMALLINT (4) NULL DEFAULT NULL,
 CHANGE COLUMN `grupo_despesa_codigo` `grupo_despesa_codigo` SMALLINT (2) NULL DEFAULT NULL,
 CHANGE COLUMN `modalidade_licitacao_codigo` `modalidade_licitacao_codigo` SMALLINT(2) NULL DEFAULT NULL;
+
+ALTER TABLE residenciatechad.recife_dados_despesas_2021
+CHANGE COLUMN `categoria_economica_codigo` `categoria_economica_codigo` SMALLINT(1) DEFAULT NULL,
+CHANGE COLUMN `empenho_ano` `empenho_ano` YEAR(4) DEFAULT NULL,
+CHANGE COLUMN `empenho_modalidade_codigo` `empenho_modalidade_codigo` SMALLINT(4);
 
 ## TABELA 4 - RECEITAS
 
@@ -133,6 +141,32 @@ CHANGE COLUMN `categoria_receita_codigo` `categoria_receita_codigo` SMALLINT (2)
 CHANGE COLUMN `receita_local_codigo` `receita_local_codigo` SMALLINT (5) NULL DEFAULT NULL;
 
 # SELEÇÃO DAS TABELAS PARA EXPORTAÇÃO PARA O POWER BI 
+
+## TABELA 3 - DESPESAS 
+
+--Tabela Principal - Fato:
+SELECT 
+	ano_movimentacao,
+    mes_movimentacao,
+    orgao_codigo,
+    fonte_recurso_codigo,
+    categoria_economica_codigo,
+    grupo_despesa_codigo,
+    credor_codigo,
+    modalidade_licitacao_codigo,
+    empenho_ano,
+    empenho_modalidade_codigo,
+    valor_empenhado,
+    valor_liquidado,
+    valor_pago    
+FROM residenciatechad.recife_dados_despesas_2021;
+
+--Tabelas Secundárias - Dimensão:
+
+
+
+
+
 
 ## TABELA 4 - RECEITAS
 
