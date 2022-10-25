@@ -1,0 +1,7 @@
+empenho_modalidade_codigo,empenho_modalidade_nome
+0,"SEM TIPO INFORMADO"
+1,ORDINARIO
+2,ESTIMATIVO
+3,GLOBAL
+4,"SUPRIMENTO INDIVIDUAL"
+NULL,NULL

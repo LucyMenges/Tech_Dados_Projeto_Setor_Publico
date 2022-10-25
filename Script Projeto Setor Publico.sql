@@ -19,6 +19,10 @@ ALTER TABLE residenciatechad.dados_abertos_aditivos
 CHANGE COLUMN `data_fim_vigencia` `data_fim_vigencia` DATE NULL DEFAULT NULL,
 CHANGE COLUMN 'data_inicio_vigencia' 'data_inicio_vigencia' DATE NULL DEFAULT NULL;
 
+select max(length(valor_termoaditivo))  --12
+FROM residenciatechad.dados_abertos_aditivos;
+
+
 ## TABELA 2 - CONTRATOS
 
 SELECT * FROM residenciatechad.dados_abertos_contratos;
@@ -162,10 +166,33 @@ SELECT
 FROM residenciatechad.recife_dados_despesas_2021;
 
 --Tabelas Secundárias - Dimensão:
+SELECT DISTINCT (orgao_codigo),
+	orgao_nome
+FROM residenciatechad.recife_dados_despesas_2021;
 
+SELECT DISTINCT (empenho_modalidade_codigo),
+	empenho_modalidade_nome
+FROM residenciatechad.recife_dados_despesas_2021;
 
+select distinct (categoria_economica_codigo),
+categoria_economica_nome
+FROM residenciatechad.recife_dados_despesas_2021;
 
+SELECT DISTINCT (grupo_despesa_codigo),
+grupo_despesa_nome
+FROM residenciatechad.recife_dados_despesas_2021;
 
+SELECT DISTINCT (fonte_recurso_codigo),
+fonte_recurso_nome
+FROM residenciatechad.recife_dados_despesas_2021;
+
+select distinct (credor_codigo),
+credor_nome
+from residenciatechad.recife_dados_despesas_2021;
+
+SELECT DISTINCT (modalidade_licitacao_codigo),
+modalidade_licitacao_nome
+FROM residenciatechad.recife_dados_despesas_2021;
 
 
 ## TABELA 4 - RECEITAS
