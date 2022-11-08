@@ -12,6 +12,7 @@ Estrutura no Github:
 
 Pastas:
 > Banco Dados Completo: código SQL para criação do banco de dados "residenciatechad" e os quatro arquivos dele.
+
 > Tabelas_Preparadas_para_Power_BI: tabelas geradas em SQL e salvas como .csv para utilizar no Power BI.
 
 Arquivos:
