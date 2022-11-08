@@ -6,8 +6,18 @@ Serão desenvolvidos três projetos durante a Residencia Tech de Analise Dados, 
 
 # PROJETO 2 - SETOR PÚBLICO 
 
-Análise dos dados públicos do Depto, Compras da Prefeitura do Município de Recife
+Análise dos dados públicos do Departamento de Compras da Prefeitura do Município de Recife, capital do estado de Pernambuco.
 
-arquivo: Análise de Dados do Setor Público.docx (Passo a Passo geral da estrutura, Buggs e conclusões de erros)
+Estrutura no Github:
 
-arquivo: Script Projeto Setor Publico.sql (Script final, o que deu certo,kkk)
+Pastas:
+> Banco Dados Completo: código SQL para criação do banco de dados "residenciatechad" e os quatro arquivos dele.
+> Tabelas_Preparadas_para_Power_BI: tabelas geradas em SQL e salvas como .csv para utilizar no Power BI.
+
+Arquivos:
+>> Análise de Dados do Setor Público.docx: Passo a passo geral da estrutura, Buggs e conclusões de erros.
+>> Apresentação Setor Público.docx: Respostas e explicações dos gráficos produzidos para cada demanda proposta.
+>> Projeto 2 Setor Público Recife.pbix: Visualização das respostas para cada demanda proposta.
+>> Projeto 2 Setor Público Recife.pdf: A visualização gerada no Power BI, salva em pdf.
+>> Script Projeto Setor Publico.sql: Script SQL final, o que foi gerado no MySQL (o que deu certo,kkk)
+
