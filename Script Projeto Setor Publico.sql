@@ -49,8 +49,8 @@ RENAME TO  `residenciatechad`.`recife_dados_receitas_2021`;
 -- Verificando quais mudanças seráo necessárias TABELA DESPESAS:
 SELECT * FROM residenciatechad.recife_dados_despesas_2021 LIMIT 20;
 
--- Alterando a formatação dos números nas colunas 'valor_empenhado', 'valor_liquidado' e 'valor_pago',
--- Após isso será alterado o tipo de TEXT para DOUBLER.
+-- Alterando a formatação dos números nas colunas 'valor_empenhado', 'valor_liquidado' e 'valor_pago'.
+-- Após isso será alterado o tipo de TEXT para DECIMAL.
 UPDATE residenciatechad.recife_dados_despesas_2021 SET 
     valor_empenhado = REPLACE (valor_empenhado,',','.'),
     valor_liquidado = REPLACE (valor_liquidado, ',', '.'),
