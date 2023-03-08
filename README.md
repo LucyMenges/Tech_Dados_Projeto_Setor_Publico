@@ -23,9 +23,10 @@ Arquivos:
 * Apresentação Analise Setor Público.pdf: Respostas e explicações dos gráficos produzidos para cada demanda proposta.
 * Observações e passo a passo.pdf: Passo a passo geral da estrutura, Buggs e conclusões de erros.
 * Slides Projeto 2 Setor Publico Recife.pdf: Todas as páginas da visualização gerada no Power BI, salva em pdf.
-* Script Projeto Setor Publico.sql: Script SQL final, o que foi gerado no MySQL
+* Script Projeto Setor Publico.sql: Script SQL final, o que foi gerado no MySQL<br/><br/>
 
-**Observações sobre Projeto:**<br/><br/>
+**Observações sobre Projeto:**<br/>
+
 Neste projeto as ferramentas sugeridas foram Python, Pandas, SQL, Power BI. A escolha ficou a critério de cada aluno. Tínhamos quatro semanas até a entrega final e trabalhamos com metodologia ágil, com daily´s diárias com Scrum Master. 
 O bando de dados era composto por quatro tabelas com várias colunas, após a visualização e análise inicial, decidi que estes seriam preparados no MySQL Workbench, na estrutura de tabelas fato e dimensões e depois o resultado de cada consulta exportado e salvo como .csv, para ser utilizado diretamente no Power BI, para as visualizações. O objetivo foi deixar as tabelas mais enxutas e limpas, apenas com as informações necessárias para responder às demandas solicitadas.
 Logo percebi que não havia a necessidade de fazer desta forma, poderia ter utilizado as tabelas completas apenas selecionando algumas colunas específicas. Ficou como aprendizado!
@@ -34,6 +35,11 @@ Respondi a todas as quinze demandas do projeto no tempo estipulado.
 
 **Apresentação:**<br/>
 
+https://user-images.githubusercontent.com/78648122/223741910-eebe5b1c-008e-4d89-a2e9-40cc8d78f071.mp4
+
+<br/>
+:speaker:  Ative o som, por favor!
+<br/>
 Para ver o Overview das três apresentações dos projetos, clique no link: https://youtu.be/MBJQa1rW_VA
 
 Para ver a apresentação completa deste projeto, clique no link: https://youtu.be/ndF4eTGmqUg
